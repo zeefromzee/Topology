@@ -438,4 +438,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - This work utilizes [SageMath](https://www.sagemath.org/) for simplicial homology computation.
 - The theoretical foundations build upon the work of Shamir, Beimel, Stinson, and Seymour in secret sharing theory and access structure analysis.
-- We thank [advisor name, institution, or funding body] for their support and guidance.
