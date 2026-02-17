@@ -1,0 +1,39 @@
+{
+  "description": "Small access structure examples for testing",
+  "structures": [
+    {
+      "name": "4-participant hierarchical",
+      "participants": ["A", "B", "C", "D"],
+      "description": "Hierarchical structure with A as senior participant",
+      "authorized_sets": [
+        ["A", "B"],
+        ["A", "C"],
+        ["A", "D"],
+        ["B", "C", "D"]
+      ],
+      "properties": {
+        "monotone": true,
+        "threshold": false,
+        "hierarchical": true,
+        "senior_participant": "A"
+      }
+    },
+    {
+      "name": "3-out-of-4 threshold",
+      "participants": ["A", "B", "C", "D"],
+      "description": "Standard 3-out-of-4 threshold scheme",
+      "authorized_sets": [
+        ["A", "B", "C"],
+        ["A", "B", "D"],
+        ["A", "C", "D"],
+        ["B", "C", "D"]
+      ],
+      "properties": {
+        "monotone": true,
+        "threshold": true,
+        "hierarchical": false,
+        "threshold_value": 3
+      }
+    }
+  ]
+}

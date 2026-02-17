@@ -1,0 +1,61 @@
+# Default pipeline configuration for topological secret sharing analysis
+
+# Participant configuration
+participants:
+  min_count: 3
+  max_count: 7
+  default_count: 4
+
+# Access structure generation
+generation:
+  enumerate_all: false
+  max_structures: 1000
+  filter_trivial: true
+  
+# Cryptographic analysis
+crypto:
+  shamir:
+    field_size: 251  # Prime field size
+    secret_size_bits: 128
+  compute_bounds: true
+  check_ideality: true
+  threat_simulation: true
+
+# Topological computation
+topology:
+  compute_homology: true
+  compute_betti: true
+  compute_euler: true
+  vertex_analysis: true
+  max_dimension: 10
+
+# Visualization
+visualization:
+  enabled: true
+  max_participants_render: 5
+  format: "pdf"
+  dpi: 300
+  include_labels: true
+
+# Output formats
+output:
+  formats:
+    - "json"
+    - "csv"
+    - "latex"
+  save_intermediate: false
+  output_dir: "data/output"
+
+# Pipeline execution
+pipeline:
+  parallel: false
+  workers: 1
+  verbose: true
+  save_checkpoints: true
+
+# Report generation
+report:
+  include_figures: true
+  include_tables: true
+  latex_format: "ieee"
+  json_indent: 2
