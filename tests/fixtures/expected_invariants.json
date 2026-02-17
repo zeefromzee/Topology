@@ -1,0 +1,33 @@
+{
+  "description": "Expected topological invariants for test structures",
+  "invariants": [
+    {
+      "structure_name": "4-participant hierarchical",
+      "expected": {
+        "betti_numbers": {
+          "0": 1,
+          "1": 0,
+          "2": 0
+        },
+        "euler_characteristic": 1,
+        "dimension": 2,
+        "num_facets": 4,
+        "f_vector": [4, 6, 4]
+      }
+    },
+    {
+      "structure_name": "3-out-of-4 threshold",
+      "expected": {
+        "betti_numbers": {
+          "0": 1,
+          "1": 0,
+          "2": 0
+        },
+        "euler_characteristic": 1,
+        "dimension": 1,
+        "num_facets": 4,
+        "f_vector": [4, 6]
+      }
+    }
+  ]
+}
